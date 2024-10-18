@@ -18,48 +18,91 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="space-y-16">
     <section class="hero">
       <div class="overlay">
         <nav
-          class="navbar w-4/5 h-20 mx-auto flex justify-between items-center p-5"
+          class="navbar w-full h-16 mx-auto flex justify-around items-center p-5 bg-pink-200 fixed top-0"
         >
           <div>
-            <p class="text-3xl font-bold border-2 border-black p-2">J.A</p>
+            <a class="text-3xl font-bold border-2 border-black p-1" href="#"
+              >J.A</a
+            >
           </div>
-          <ul class="flex gap-10 text-xl m-3">
-            <li class="p-2 rounded-md hover:bg-white">Home</li>
-            <li class="p-2 rounded-md hover:bg-white">About</li>
-            <li class="p-2 rounded-md hover:bg-white">Portfolio</li>
-            <li class="p-2 rounded-md hover:bg-white">Download CV</li>
+          <ul class="flex text-xl m-3">
+            <li class="p-2 rounded-md hover:underline hover:font-semibold w-40">
+              <a href="#">Home</a>
+            </li>
+            <li class="p-2 rounded-md hover:underline hover:font-semibold w-40">
+              <a href="#about">About</a>
+            </li>
+            <li class="p-2 rounded-md hover:underline hover:font-semibold w-40">
+              <a href="#experience">Experience</a>
+            </li>
+            <li class="p-2 rounded-md hover:underline hover:font-semibold w-40">
+              <a href="#education">Education</a>
+            </li>
+            <li class="p-2 rounded-md hover:underline hover:font-semibold w-40">
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </nav>
-        <div class="mx-auto flex flex-col justify-center items-center mt-32">
+        <div class="mx-auto flex flex-col justify-center items-center pt-48">
           <img
             src="./images/myimage.JPG"
             alt=""
             srcset=""
-            class="w-56 rounded-full myImage"
+            class="w-64 rounded-full myImage"
           />
-          <div class="bg-white w-ful text-center py-16 px-32 details space-y-2">
-            <h1 class="text-4xl font-bold">Jessica Akosua Adika</h1>
-            <p class="text-xl">jessica.a.adika@gmail.com</p>
-            <div class="flex justify-center gap-5 mx-auto">
-              <i class="fab fa-linkedin-in" style="font-size: 36px"></i>
-              <i class="fab fa-github" style="font-size: 36px"></i>
-              <i class="fab fa-instagram" style="font-size: 36px"></i>
+          <div
+            class="bg-white w-ful text-center py-12 px-32 details rounded-3xl"
+          >
+            <h1 class="text-5xl font-bold">Jessica Akosua Adika</h1>
+            <p class="text-2xl font-semibold text-pink-500">
+              Multilingual Backend Developer
+            </p>
+            <div class="flex justify-center gap-12 items-center mt-4">
+              <div class="flex justify-center gap-6">
+                <a href="#"
+                  ><i
+                    class="fab fa-linkedin-in hover:underline hover:text-pink-500"
+                    style="font-size: 36px"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fab fa-github hover:underline hover:text-pink-500"
+                    style="font-size: 36px"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fab fa-instagram hover:underline hover:text-pink-500"
+                    style="font-size: 36px"
+                  ></i
+                ></a>
+              </div>
+              <a
+                class="px-4 py-2 bg-gray-400 text-lg rounded-md hover:bg-pink-200"
+                href="Jessica Akosua Adika CV pdf.pdf"
+                download
+              >
+                Download CV
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div class="flex justify-around p-10 mx-12">
+    <section class="about pl-20 pr-20 pt-20" id="about">
+      <div class="flex justify-around">
         <div class="w-1/5">
-          <h1 class="text-4xl font-semibold underline">About me</h1>
+          <h2 class="text-4xl font-semibold underline text-pink-500">
+            About me
+          </h2>
           <p class="text-lg text-gray-700">Professional Path</p>
         </div>
-        <div class="w-3/5">
+        <div class="w-3/5 space-y-4">
           <p class="text-lg">
             A multilingual professional fluent in English, French, and Spanish.
             With over five years of experience in the banking industry, she
@@ -67,10 +110,12 @@
             processing and fusion, Oracle Flexcube, and ATM handling. Currently,
             Jessica is expanding her expertise by joining the Meltwater
             Entrepreneurial School of Technology (MEST), where she is focused on
-            learning web development with a specialty in backend development. My
-            technical proficiency and problem-solving skills allow her to adapt
-            seamlessly to the digital transformation in both banking and web
-            development. Jessica’s strengths include excellent communication
+            learning web development with a specialty in backend development.
+          </p>
+          <p class="text-lg">
+            My technical proficiency and problem-solving skills allow her to
+            adapt seamlessly to the digital transformation in both banking and
+            web development. Jessica’s strengths include excellent communication
             skills and strong presentation abilities, enabling her to connect
             with diverse audiences and present complex solutions clearly and
             confidently. Her unique blend of banking experience and technical
@@ -78,52 +123,327 @@
             professional in today's evolving digital landscape.
           </p>
         </div>
-      </div>
-      <div class="flex justify-center gap-10">
-        <div class="p-10 border-4 w-48 rounded-full">
-          <p class="text-4xl font-semibold">72%</p>
-          <p class="text-lg">HTML5 & CSS3</p>
+      </div>      
+    </section>
+    <section class="experience pl-20 pr-20">
+      <h2 class="text-4xl font-semibold underline text-pink-500">
+        Skills
+      </h2>
+      <div class="flex justify-center gap-12 flex-wrap mt-10">
+        <div class="p-10 border-4 w-48 h-48 rounded-full">
+          <img src="./images/htmlCSS.jpg" alt="htmlCSS" class="skillImage">
+          <p class="text-lg text-pink-500 font-medium">HTML & CSS</p>
         </div>
-        <div class="p-10 border-4 w-48 rounded-full">
-          <p class="text-4xl font-semibold">72%</p>
-          <p class="text-lg">JavaScript</p>
+        <div class="p-10 border-4 w-48 h-48 rounded-full">
+          <img src="./images/tailwindcss.png" alt="tailwind" class="skillImage">
+          <p class="text-lg text-pink-500 font-medium">TailwindCSS</p>
         </div>
-        <div class="p-10 border-4 w-48 rounded-full">
-          <p class="text-4xl font-semibold">72%</p>
-          <p class="text-lg">Node.js</p>
+        <div class="p-10 border-4 w-48 h-48 rounded-full">
+          <img src="./images/javascript.png" alt="jS" class="skillImage">
+          <p class="text-lg text-pink-500 font-medium">JavaScript</p>
+        </div>
+        <div class="p-10 border-4 w-48 h-48 rounded-full">
+          <img src="./images/nodeJS.png" alt="nodeJS" class="skillImage">
+          <p class="text-lg text-pink-500 font-medium">Node.js</p>
         </div>
       </div>
     </section>
-    <section>
-      <div class="flex justify-around p-10 mx-12">
+    <section class="experience pl-20 pr-20 pt-20" id="experience">
+      <div class="flex justify-around">
         <div class="w-1/5">
-          <h1 class="text-4xl font-semibold underline">Work Experience</h1>
+          <h2 class="text-4xl font-semibold underline text-pink-500">
+            Work Experience
+          </h2>
           <p class="text-lg text-gray-700">Previous Jobs</p>
         </div>
-        <div class="w-3/5">
-          <div>
-            <p>CUSTOMER SERVICE PERSONNEL – EXECUTIVE ASSISTANT</p>
-            <p>PRUDENTIAL BANK LIMITED, GHANA</p>
-            <p>SEPT 2020 - 2023</p>
+        <div class="w-3/5 space-y-10">
+          <div class="job1">
+            <div class="mb-5">
+              <p class="font-semibold text-xl">
+                CUSTOMER SERVICE PERSONNEL – EXECUTIVE ASSISTANT
+              </p>
+              <p class="text-lg font-bold text-pink-500">
+                PRUDENTIAL BANK LIMITED, GHANA
+              </p>
+              <p class="font-medium text-sm">SEPT 2019 - 2023</p>
+            </div>
+            <ul class="list-disc ml-5 space-y-2">
+              <li>
+                Demonstrated exceptional calendar management skills by
+                effectively coordinating and prioritizing executive schedules.
+                Proactively identified and resolved scheduling conflicts,
+                ensuring seamless coordination of appointments, meetings, and
+                travel arrangements.
+              </li>
+              <li>
+                Spearheaded the implementation of mobile banking services,
+                enhancing customer experience and increasing digital adoption by
+                30% within the first year.
+              </li>
+              <li>
+                Collaborated with cross-functional teams to develop and
+                implement strategies for improving customer service
+                satisfaction, resulting in a 25% increase in positive feedback.
+              </li>
+            </ul>
           </div>
-          <ul>
-            <li>
-              Demonstrated exceptional calendar management skills by effectively
-              coordinating and prioritizing executive schedules. Proactively
-              identified and resolved scheduling conflicts, ensuring seamless
-              coordination of appointments, meetings, and travel arrangements.
-            </li>
-            <li>
-              Spearheaded the implementation of mobile banking services,
-              enhancing customer experience and increasing digital adoption by
-              30% within the first year.
-            </li>
-            <li>
-              Collaborated with cross-functional teams to develop and implement
-              strategies for improving customer service satisfaction, resulting
-              in a 25% increase in positive feedback.
-            </li>
-          </ul>
+          <hr />
+          <!-- <div class="job3">
+            <div class="mb-5">
+              <p class="font-semibold text-xl">ASSISTANT TRANSLATOR</p>
+              <p class="text-lg font-bold text-pink-500">
+                MINISTÈRE DES AFFAIRS ÉTRANGÈRES ET DE LA COOPÉRATION, BENIN
+                COTONOU
+              </p>
+              <p class="font-medium text-sm">2018</p>
+            </div>
+            <ul class="list-disc ml-5 space-y-2">
+              <li>
+                Assisted in translating written documents, texts, or spoken
+                words from one language to another.
+              </li>
+              <li>
+                Collaborated with senior translators to ensure accuracy,
+                clarity, and cultural appropriateness in translations.
+              </li>
+              <li>
+                Conducted thorough proofreading and editing of translated
+                materials to identify and rectify linguistic and grammatical
+                errors.
+              </li>
+              <li>
+                Assisted in the quality assurance process, contributing to the
+                delivery of high-quality and error-free translations to clients.
+              </li>
+            </ul>
+          </div> -->
+          <!-- <hr /> -->
+          <div class="job4">
+            <div class="mb-5">
+              <p class="font-semibold text-xl">OFFICE ASSISTANT</p>
+              <p class="text-lg font-bold text-pink-500">
+                MINSTRY OF FOREIGN AFFAIRS AND REGIONAL INTERGRATION, ACCRA
+              </p>
+              <p class="font-medium text-sm">JULY - SEPT 2016</p>
+            </div>
+            <ul class="list-disc ml-5 space-y-2">
+              <li>
+                Provided comprehensive administrative support to ensure the
+                smooth functioning of daily office operations.
+              </li>
+              <li>
+                Assisted in managing correspondence, handling phone calls, and
+                coordinating internal and external communications.
+              </li>
+              <li>
+                Maintained an organized and efficient office environment by
+                managing filing systems, records, and office supplies.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="education pl-20 pr-20 pt-20" id="education">
+      <div>
+        <div>
+          <h2 class="text-4xl font-semibold underline text-pink-500">
+            Education
+          </h2>
+          <p class="text-lg text-gray-700">Academic Career</p>
+        </div>
+        <div class="parent">
+          <div class="school1 div1">
+            <div>
+              <img
+                src="./images/mest-logo.png"
+                alt="mest-logo"
+                class="school-logo"
+              />
+            </div>
+            <div class="space-y-2">
+              <p class="font-semibold text-xl">
+                Web Development Training (Backend)
+              </p>
+              <p class="text-lg font-bold text-pink-500">MEST AFRICA</p>
+              <p class="text-lg studyDuration">SEPT 2024 - Present</p>
+            </div>
+          </div>
+          <div class="school2 div2">
+            <div>
+              <img src="./images/GIL.jpg" alt="mest-logo" class="school-logo" />
+            </div>
+            <div class="space-y-2">
+              <p class="font-semibold text-xl">
+                Bachelor of Arts in Translation
+              </p>
+              <p class="text-lg font-bold text-pink-500">
+                GHANA INSTITUTES OF LANGUAGES (GIL), ACCRA
+              </p>
+              <p class="text-lg studyDuration">2015 - 2019</p>
+            </div>
+          </div>
+          <div class="school3 div3">
+            <div>
+              <img
+                src="./images/uc-benin.png"
+                alt="mest-logo"
+                class="school-logo"
+              />
+            </div>
+            <div class="space-y-2">
+              <p class="font-semibold text-xl">Diploma (French)</p>
+              <p class="text-lg font-bold text-pink-500">
+                UNIVERSITY OF CALAVI, BENIN
+              </p>
+              <p class="text-lg studyDuration">2017 - 2018</p>
+            </div>
+          </div>
+          <div class="school4 div4">
+            <div>
+              <img
+                src="./images//awudome.png"
+                alt="mest-logo"
+                class="school-logo"
+              />
+            </div>
+            <div class="space-y-2">
+              <p class="font-semibold text-xl">General Arts</p>
+              <p class="text-lg font-bold text-pink-500">
+                AWUDOME SENIOR HIGH SCHOOL, VOLTA- GHANA
+              </p>
+              <p class="text-lg studyDuration">2010 - 2013</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contactSection pl-20 pr-20 pt-20" id="contact">
+      <h2 class="text-4xl font-semibold underline text-pink-500">
+        Get in touch
+      </h2>
+      <div class="contactParent">
+        <div class="contact-flex">
+          <div class="contact-left w-2/5">
+            <div class="contact-item">
+              <i
+                id="social-icons"
+                class="fa fa-phone"
+                style="
+                  font-size: 24px;
+                  padding-right: 12px;
+                  padding: 10px;
+                  color: white;
+                  background-color: rgb(27, 27, 27, 0.5);
+                  /* border: solid 0.1rem; */
+                  /* border-radius: 10px; */
+                  margin-right: 20px;
+                "
+              ></i>
+              <div class="contact-text">
+                <p class="contact-cap text-lg">Phone</p>
+                <p class="contact-caption text-lg hover:underline">
+                  +233 266 410 910
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i
+                id="social-icons"
+                class="fa fa-envelope"
+                style="
+                  font-size: 20px;
+                  padding: 12px;
+                  color: white;
+                  background-color: rgb(27, 27, 27, 0.5);
+                  /* border: solid 0.1rem; */
+                  /* border-radius: 10px; */
+                  margin-right: 20px;
+                "
+              ></i>
+              <div class="contact-text">
+                <p class="contact-cap text-lg">Email</p>
+                <p class="text-lg hover:underline">
+                  <a href="mailto:jessica.a.adika@gmail.com"
+                    >jessica.a.adika@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i
+                id="social-icons"
+                class="fa fa-map-marker"
+                style="
+                  font-size: 24px;
+                  padding-right: 13px;
+                  padding-left: 13px;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  color: white;
+                  background-color: #1b1b1b80;
+                  /* border: solid 0.1rem; */
+                  /* border-radius: 10px; */
+                  margin-right: 20px;
+                "
+              ></i>
+              <div class="contact-text">
+                <p class="contact-cap text-lg">Address</p>
+                <p class="contact-caption text-lg hover:underline leading-8">
+                  GA-085-8225, <br class="" />
+                  Airport, Accra - Ghana
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-start gap-12 mx-auto">
+              <a href="#"
+                ><i
+                  class="fab fa-linkedin-in hover:underline"
+                  style="font-size: 36px"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fab fa-github hover:underline"
+                  style="font-size: 36px"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fab fa-instagram hover:underline"
+                  style="font-size: 36px"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right w-3/5">
+            <p class="serviceHead text-2xl font-semibold mb-5">Say Hello</p>
+            <input
+              type="text"
+              id="name"
+              placeholder="Name..."
+              class="input-box"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email..."
+              class="input-box"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter your message..."
+              class="textbox active:text-black"
+            ></textarea>
+            <button
+              class="px-4 py-2 bg-gray-400 text-xl rounded-md hover:bg-pink-200"
+            >
+              Send Message
+            </button>
+          </div>
         </div>
       </div>
     </section>
